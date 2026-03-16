@@ -1,140 +1,210 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 
-<title>Kalaiarasan Portfolio</title>
+<title>Kalaiarasan's Portfolio</title>
+
 <link rel="stylesheet" href="style.css">
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+
 </head>
 
 <body>
+
 <canvas id="bg"></canvas>
 
 <nav>
-<h2>Kalaiarasan</h2>
 
-<div>
+<h2>Kalaiarasan S</h2>
+
+<div class="navBtns">
+
 <button onclick="showPage('home')">Home</button>
 <button onclick="showPage('about')">About</button>
 <button onclick="showPage('skills')">Skills</button>
 <button onclick="showPage('projects')">Projects</button>
-<button onclick="showPage('experience')">Experience</button>
+<button onclick="showPage('timeline')">Journey</button>
 <button onclick="showPage('contact')">Contact</button>
+
 </div>
 
 </nav>
 
-<section id="home" class="page active">
-<h1>Kalaiarasan S</h1>
-<p>Mechanical Engineer | CAD | CAE | Automation | Python</p>
 
-<div class="tech-icons">
+
+<section id="home" class="page active">
+
+<h1>Mechanical Engineer</h1>
+
+<p>CAD Design • CAE Simulation • Automation • Python</p>
+
+<div class="techStack">
+
 <img src="https://img.icons8.com/color/96/solidworks.png">
 <img src="https://img.icons8.com/color/96/autocad.png">
 <img src="https://img.icons8.com/color/96/python.png">
 <img src="https://img.icons8.com/color/96/c-plus-plus-logo.png">
 <img src="https://img.icons8.com/color/96/arduino.png">
+<img src="https://img.icons8.com/color/96/github.png">
+<img src="https://img.icons8.com/color/96/3d-printer.png">
+<img src="https://img.icons8.com/color/96/artificial-intelligence.png">
+
 </div>
 
 </section>
+
+
 
 <section id="about" class="page">
-<h1>About</h1>
+
+<h1>About Me</h1>
 
 <p>
-I am a Mechanical Engineering graduate from Loyola Institute of Technology with strong knowledge in CAD design, CAE simulation and manufacturing processes.
+
+Kalaiarasan S is a Mechanical Engineering graduate from Loyola Institute of Technology with a strong foundation in CAD modeling, mechanical design and engineering simulations.
+
 </p>
+
 <p>
-Am skilled in SolidWorks, AutoCAD, NX, Fusion 360, Creo and ANSYS along with programming languages like Python and C++.
+
+He is proficient in engineering software such as SolidWorks, AutoCAD, NX, Fusion 360, Creo and ANSYS. In addition to mechanical tools he also works with Python and C++ for automation and data analysis.
+
 </p>
+
 <p>
-My internships in Global Techno Solutions, Sundaram TVS and Esteem Polymers helped him gain real world industrial experience in design optimization, production monitoring and assembly quality processes.
+
+Through internships at Global Techno Solutions, Sundaram TVS and Esteem Polymers, he gained real-world industry exposure in production systems, mechanical component design and quality inspection.
+
 </p>
+
 </section>
+
+
 
 <section id="skills" class="page">
-<h1>Skills</h1>
-<div id="skillSphere"></div>
+
+<h1>Tech Stack</h1>
+
+<div class="skillsGrid">
+
+<div class="skill"><img src="https://img.icons8.com/color/96/solidworks.png"><p>SolidWorks</p></div>
+<div class="skill"><img src="https://img.icons8.com/color/96/autocad.png"><p>AutoCAD</p></div>
+<div class="skill"><img src="https://img.icons8.com/color/96/python.png"><p>Python</p></div>
+<div class="skill"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png"><p>C++</p></div>
+<div class="skill"><img src="https://img.icons8.com/color/96/arduino.png"><p>Arduino</p></div>
+
+</div>
+
 </section>
+
+
 
 <section id="projects" class="page">
+
 <h1>Projects</h1>
+
 <div class="projects">
-<div class="card">
+
+<div class="projectCard">
+
 <h3>Surface Defect Detection on Weldments</h3>
+
 <p>
-AI based ANFIS algorithm system used to detect welding defects and reduce inspection time in manufacturing. 
-Using the Adaptive Neuro-Fuzzy Inference System (ANFIS) algorithm involves combining the learning capabilities of Neural Networks with the human-like reasoning of Fuzzy Logic to identify, classify, and predict welding flaws.
-ANFIS is particularly effective for mapping nonlinear relationships between welding process parameters (like current, speed, and voltage) and output quality characteristics (like surface roughness or bead width).
+
+AI based system using ANFIS algorithm to identify welding defects and improve inspection accuracy.
+
 </p>
+
 </div>
 
-<div class="card">
-<h3>Radar Detection using Arduino</h3>
+<div class="projectCard">
+
+<h3>Arduino Radar Detection System</h3>
+
 <p>
-Arduino radar sensing system developed using ultrasonic sensors and displayed in college tech expo.
-An Arduino-based RADAR system is built as a cost-effective, accessible, and educational tool to detect and map objects within a 180-degree field using an ultrasonic sensor on a servo motor.
-It is designed for hobbyists, students, and prototypers to learn about sensor integration, data visualization (via Processing IDE), and object detection principles.
+
+Radar sensing system built using Arduino and ultrasonic sensors for object detection and visualization.
+
 </p>
+
 </div>
 
-<div class="card">
-<h3>. It is designed for hobbyists, students, and prototypers to learn about sensor integration, data visualization (via Processing IDE), and object detection principles</h3>
+<div class="projectCard">
+
+<h3>Personal Health Guardian</h3>
+
 <p>
-Python AI system that analyzes medical PDF reports and generates health insights and recommendations.
-A Personal Health Guardian capstone project is developed to automate personal health tracking, analyze wellness data (sleep, activity, mood), and provide actionable health insights using Python.
-t serves to build predictive, user-centric healthcare tools, demonstrating proficiency in data analysis, machine learning, and application development.
+
+Python system that reads medical reports and generates insights using AI based analysis.
+
 </p>
+
 </div>
+
 </div>
+
 </section>
 
-<section id="experience" class="page">
-<h1>Internships</h1>
+
+
+<section id="timeline" class="page">
+
+<h1>Education & Internship Timeline</h1>
+
 <div class="timeline">
-<div>
-<h3>Global Techno Solutions</h3>
-<p>AutoCAD & ANSYS Intern</p>
-<p>
-Designed mechanical components and conducted structural simulations using ANSYS.
-Focused on bridging theoretical engineering knowledge with practical industry-standard simulation and design skills.
-Typically involves learning to import 3D models (from CAD tools), meshing, applying loads/boundary conditions, solving, and interpreting results.
-</p>
+
+<div class="timelineItem">
+<span>2020</span>
+<p>Started B.E Mechanical Engineering – Loyola Institute of Technology</p>
 </div>
 
-<div>
-<h3>Sundaram TVS</h3>
-<p>Assembly Intern</p>
-<p>
-Supported product assembly operations and quality inspection activities.
-Learned to perform incoming material inspections, wire cutting/crimping, connector insertion, and quality assurance testing in electronics or mechanical production.
-Learned to follow technical documentation, standard operating procedures, and safety guidelines.
-</p>
+<div class="timelineItem">
+<span>2022</span>
+<p>Internship – Esteem Polymers (Production Department)</p>
 </div>
 
-<div>
-<h3>Esteem Polymers</h3>
-<p>Production Intern</p>
-<p>
-Worked on polymer manufacturing shop floor operations.
-Gained hands-on experience in various industries, primarily focused on the creation, manufacturing, or media production processes.
-Assisted in monitoring production processes and identifying bottlenecks to enhance efficiency.
-</p>
+<div class="timelineItem">
+<span>2023</span>
+<p>Internship – Sundaram TVS (Assembly Operations)</p>
 </div>
+
+<div class="timelineItem">
+<span>2024</span>
+<p>Internship – Global Techno Solutions (AutoCAD & ANSYS)</p>
 </div>
+
+<div class="timelineItem">
+<span>2024</span>
+<p>Graduated Mechanical Engineering</p>
+</div>
+
+</div>
+
 </section>
+
+
 
 <section id="contact" class="page">
+
 <h1>Contact</h1>
+
 <div class="contact">
-<a href="mailto:s.kaliarasan63vijay@gmail.com">Email</a>
-<a href="tel:+9186818445555">Phone</a>
-<a href="https://linkedin.com/in/kalaiarasan-s-a588a6269">LinkedIn</a>
+
+<a href="mailto:s.kaliarasan63vijay@gmail.com">📧 Email</a>
+
+<a href="tel:+9186818445555">📞 Phone</a>
+
+<a href="https://linkedin.com/in/kalaiarasan-s-a588a6269">💼 LinkedIn</a>
+
 </div>
+
 </section>
+
 
 <script src="script.js"></script>
 

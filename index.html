@@ -1,408 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 
-<title>Kalaiarasan's Portfolio</title>
-
+<title>Kalaiarasan Portfolio</title>
 <link rel="stylesheet" href="style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-
 </head>
 
 <body>
-
 <canvas id="bg"></canvas>
 
-<nav class="navbar">
-
+<nav>
 <h2>Kalaiarasan</h2>
 
-<div class="nav-links">
-
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#projects">Projects</a>
-<a href="#experience">Experience</a>
-<a href="#education">Education</a>
-<a href="#github">GitHub</a>
-<a href="#contact">Contact</a>
-
+<div>
+<button onclick="showPage('home')">Home</button>
+<button onclick="showPage('about')">About</button>
+<button onclick="showPage('skills')">Skills</button>
+<button onclick="showPage('projects')">Projects</button>
+<button onclick="showPage('experience')">Experience</button>
+<button onclick="showPage('contact')">Contact</button>
 </div>
 
 </nav>
 
-
-<section class="hero">
-
+<section id="home" class="page active">
 <h1>Kalaiarasan S</h1>
-
-<p>Mechanical Engineer | CAD Design | CAE Simulation | Automation | Python</p>
+<p>Mechanical Engineer | CAD | CAE | Automation | Python</p>
 
 <div class="tech-icons">
-
-<div class="tech">
 <img src="https://img.icons8.com/color/96/solidworks.png">
-<p>SolidWorks</p>
-</div>
-
-<div class="tech">
 <img src="https://img.icons8.com/color/96/autocad.png">
-<p>AutoCAD</p>
-</div>
-
-<div class="tech">
 <img src="https://img.icons8.com/color/96/python.png">
-<p>Python</p>
-</div>
-
-<div class="tech">
 <img src="https://img.icons8.com/color/96/c-plus-plus-logo.png">
-<p>C++</p>
-</div>
-
-<div class="tech">
 <img src="https://img.icons8.com/color/96/arduino.png">
-<p>Arduino</p>
-</div>
-
-<div class="tech">
-<img src="https://img.icons8.com/color/96/github.png">
-<p>GitHub</p>
-</div>
-
-<div class="tech">
-<img src="https://img.icons8.com/color/96/3d-printer.png">
-<p>3D Printing</p>
-</div>
-
-<div class="tech">
-<img src="https://img.icons8.com/color/96/artificial-intelligence.png">
-<p>ANSYS</p>
-</div>
-
 </div>
 
 </section>
 
-
-<section id="about" class="section">
-
-<h2>About Me</h2>
+<section id="about" class="page">
+<h1>About</h1>
 
 <p>
-
-Kalaiarasan S is a passionate Mechanical Engineering graduate from Loyola Institute of Technology, Chennai. He has strong knowledge in CAD design, CAE simulations, and manufacturing technologies. His academic journey and industrial exposure helped him develop a strong understanding of design optimization, engineering analysis and production workflows.
-
+I am a Mechanical Engineering graduate from Loyola Institute of Technology with strong knowledge in CAD design, CAE simulation and manufacturing processes.
 </p>
-
 <p>
-
-He is skilled in multiple design and engineering tools including SolidWorks, AutoCAD, NX, Fusion 360, Creo and ANSYS. Along with mechanical expertise, he has programming knowledge in Python, C++ and RPA automation using UiPath, enabling him to integrate software technology with engineering systems.
-
+Am skilled in SolidWorks, AutoCAD, NX, Fusion 360, Creo and ANSYS along with programming languages like Python and C++.
 </p>
-
 <p>
-
-Through internships in manufacturing and design companies such as Global Techno Solutions, Sundaram TVS and Esteem Polymers, he gained real-world experience in product design, production monitoring and assembly quality control.
-
+My internships in Global Techno Solutions, Sundaram TVS and Esteem Polymers helped him gain real world industrial experience in design optimization, production monitoring and assembly quality processes.
 </p>
-
-<p>
-
-Kalaiarasan is highly motivated to contribute to engineering innovation by combining mechanical knowledge with automation, AI technologies and modern manufacturing solutions.
-
-</p>
-
 </section>
 
-
-
-<section id="skills" class="section">
-
-<h2>Technical Skills</h2>
-
-<div class="skills-grid">
-
-<div class="skill-card">SolidWorks</div>
-<div class="skill-card">AutoCAD</div>
-<div class="skill-card">NX Pro</div>
-<div class="skill-card">Fusion 360</div>
-<div class="skill-card">Creo</div>
-<div class="skill-card">ANSYS</div>
-<div class="skill-card">Finite Element Analysis</div>
-<div class="skill-card">GD&T</div>
-<div class="skill-card">Python</div>
-<div class="skill-card">C++</div>
-<div class="skill-card">UiPath RPA</div>
-<div class="skill-card">Arduino</div>
-<div class="skill-card">CNC Machines</div>
-<div class="skill-card">3D Printing</div>
-
-</div>
-
+<section id="skills" class="page">
+<h1>Skills</h1>
+<div id="skillSphere"></div>
 </section>
 
-
-
-<section id="projects" class="section">
-
-<h2>Projects</h2>
-
+<section id="projects" class="page">
+<h1>Projects</h1>
 <div class="projects">
-
-<div class="project-card">
-
-<h3>Surface Defect Detection on Weldments using ANFIS</h3>
-
+<div class="card">
+<h3>Surface Defect Detection on Weldments</h3>
 <p>
-
-This project focused on improving the efficiency of weld defect inspection in manufacturing industries. Traditional inspection methods are time consuming and may lead to inconsistent results.
-
+AI based ANFIS algorithm system used to detect welding defects and reduce inspection time in manufacturing. 
+Using the Adaptive Neuro-Fuzzy Inference System (ANFIS) algorithm involves combining the learning capabilities of Neural Networks with the human-like reasoning of Fuzzy Logic to identify, classify, and predict welding flaws.
+ANFIS is particularly effective for mapping nonlinear relationships between welding process parameters (like current, speed, and voltage) and output quality characteristics (like surface roughness or bead width).
 </p>
-
-<p>
-
-An Adaptive Neuro Fuzzy Inference System (ANFIS) model was developed to analyze weld surface characteristics and detect defects automatically. The system improves inspection accuracy and reduces inspection time significantly.
-
-</p>
-
-<p>
-
-Technologies Used: Python, AI Algorithms, Data Analysis
-
-</p>
-
 </div>
 
-
-<div class="project-card">
-
-<h3>RADAR Sensing Detection using Arduino</h3>
-
+<div class="card">
+<h3>Radar Detection using Arduino</h3>
 <p>
-
-This project involved developing a radar detection system using Arduino and ultrasonic sensors to detect nearby objects and obstacles.
-
+Arduino radar sensing system developed using ultrasonic sensors and displayed in college tech expo.
+An Arduino-based RADAR system is built as a cost-effective, accessible, and educational tool to detect and map objects within a 180-degree field using an ultrasonic sensor on a servo motor.
+It is designed for hobbyists, students, and prototypers to learn about sensor integration, data visualization (via Processing IDE), and object detection principles.
 </p>
-
-<p>
-
-The radar system scans its surroundings and displays object detection results in real time. The prototype was demonstrated at a college technology exhibition and received **2nd place** recognition.
-
-</p>
-
-<p>
-
-Technologies Used: Arduino, Embedded Systems, Sensor Programming
-
-</p>
-
 </div>
 
-
-<div class="project-card">
-
-<h3>Personal Health Guardian</h3>
-
+<div class="card">
+<h3>. It is designed for hobbyists, students, and prototypers to learn about sensor integration, data visualization (via Processing IDE), and object detection principles</h3>
 <p>
-
-Personal Health Guardian is an AI-based healthcare analysis system developed using Python.
-
+Python AI system that analyzes medical PDF reports and generates health insights and recommendations.
+A Personal Health Guardian capstone project is developed to automate personal health tracking, analyze wellness data (sleep, activity, mood), and provide actionable health insights using Python.
+t serves to build predictive, user-centric healthcare tools, demonstrating proficiency in data analysis, machine learning, and application development.
 </p>
-
-<p>
-
-The system reads medical PDF reports and extracts key health indicators such as blood parameters and diagnostic results.
-
-</p>
-
-<p>
-
-It then generates insights including health summaries, risk indicators, lifestyle recommendations and trend analysis to help users better understand their medical conditions.
-
-</p>
-
-<p>
-
-Technologies Used: Python, Data Processing, AI Analysis
-
-</p>
-
 </div>
-
 </div>
-
 </section>
 
-
-
-<section id="experience" class="section">
-
-<h2>Internship Experience</h2>
-
+<section id="experience" class="page">
+<h1>Internships</h1>
 <div class="timeline">
-
-<div class="timeline-item">
-
-<h3>AutoCAD & ANSYS Intern</h3>
-<p>Global Techno Solutions | February 2025 – May 2025</p>
-
+<div>
+<h3>Global Techno Solutions</h3>
+<p>AutoCAD & ANSYS Intern</p>
 <p>
-
-Worked on designing mechanical components using SolidWorks and AutoCAD. Performed Finite Element Analysis simulations in ANSYS to evaluate structural performance and improve component durability.
-
+Designed mechanical components and conducted structural simulations using ANSYS.
+Focused on bridging theoretical engineering knowledge with practical industry-standard simulation and design skills.
+Typically involves learning to import 3D models (from CAD tools), meshing, applying loads/boundary conditions, solving, and interpreting results.
 </p>
-
-<p>
-
-Contributed to design optimization activities to enhance manufacturability and improve engineering accuracy.
-
-</p>
-
 </div>
 
-
-<div class="timeline-item">
-
-<h3>Assembly Intern</h3>
-<p>Sundaram TVS – Padi | Augusst 2024 – September 2024</p>
-
+<div>
+<h3>Sundaram TVS</h3>
+<p>Assembly Intern</p>
 <p>
-
-Supported assembly operations in a manufacturing environment and assisted engineers in product assembly processes.
-
+Supported product assembly operations and quality inspection activities.
+Learned to perform incoming material inspections, wire cutting/crimping, connector insertion, and quality assurance testing in electronics or mechanical production.
+Learned to follow technical documentation, standard operating procedures, and safety guidelines.
 </p>
-
-<p>
-
-Participated in quality inspection activities and helped reduce product rework through careful visual inspection and quality checks.
-
-</p>
-
 </div>
 
-
-<div class="timeline-item">
-
-<h3>Production Intern</h3>
-<p>Esteem Polymers | July 2023 – August 2023</p>
-
+<div>
+<h3>Esteem Polymers</h3>
+<p>Production Intern</p>
 <p>
-
-Worked on polymer manufacturing shop floor operations and observed industrial production workflows.
-
+Worked on polymer manufacturing shop floor operations.
+Gained hands-on experience in various industries, primarily focused on the creation, manufacturing, or media production processes.
+Assisted in monitoring production processes and identifying bottlenecks to enhance efficiency.
 </p>
-
-<p>
-
-Monitored production processes to ensure stable manufacturing conditions and assisted technicians in maintaining production efficiency.
-
-</p>
-
 </div>
-
-
-<div class="timeline-item">
-
-<h3>HR Intern</h3>
-<p>Federal Bank CSR</p>
-
-<p>
-
-Supported HR and CSR activities by assisting in documentation, employee record management and reporting tasks.
-
-</p>
-
-<p>
-
-Coordinated with internal teams to organize CSR initiatives and maintain operational documentation.
-
-</p>
-
 </div>
-
-</div>
-
 </section>
 
-
-
-<section id="education" class="section">
-
-<h2>Education</h2>
-
-<div class="timeline">
-
-<div class="timeline-item">
-
-<h3>B.E Mechanical Engineering</h3>
-<p>Loyola Institute of Technology, Chennai</p>
-<p>CGPA: 7.6/10</p>
-<p>2021 - 2025</p>
-
+<section id="contact" class="page">
+<h1>Contact</h1>
+<div class="contact">
+<a href="mailto:s.kaliarasan63vijay@gmail.com">Email</a>
+<a href="tel:+9186818445555">Phone</a>
+<a href="https://linkedin.com/in/kalaiarasan-s-a588a6269">LinkedIn</a>
 </div>
-
-<div class="timeline-item">
-
-<h3>Higher Secondary Education (12th Grade)</h3>
-<p>Government Boys Higher Secondary School, Chennai-15</p>
-<p>Score: 75%</p>
-<p>2020 - 2021</p>
-
-</div>
-
-<div class="timeline-item">
-
-<h3>SSLC (10th Grade)</h3>
-<p>Government Boys Higher Secondary School, Chennai-15.</p>
-<p>Score: 68%</p>
-<p>2018 - 2019</p>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<section id="github" class="section">
-
-<h2>GitHub Statistics</h2>
-
-<div class="github">
-
-<img src="https://github-readme-stats.vercel.app/api?username=kalaiarasan&show_icons=true&theme=tokyonight">
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=kalaiarasan&theme=tokyonight">
-
-</div>
-
-</section>
-
-
-
-<section id="contact" class="section">
-
-<h2>Contact</h2>
-
-<div class="contact-links">
-
-<a href="mailto:s.kaliarasan63vijay@gmail.com">📧 Email</a>
-
-<a href="tel:+9186818445555">📞 Phone</a>
-
-<a href="https://linkedin.com/in/kalaiarasan-s-a588a6269" target="_blank">💼 LinkedIn</a>
-
-</div>
-
 </section>
 
 <script src="script.js"></script>
